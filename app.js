@@ -6,8 +6,12 @@ function getComputerChoice() {
 	return plays[randomNumber]
 }
 
+function getPlayerChoice() {
+  return prompt('Enter your choice...').toLowerCase()
+}
+
 const computerSelection = getComputerChoice()
-const playerSelection = 'paper'
+const playerSelection = getPlayerChoice()
 
 function playRound(playerSelection, computerSelection) {
 	// tie if both choices are same
